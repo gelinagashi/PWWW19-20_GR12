@@ -30,15 +30,34 @@ label input  {
                 color: white;
 }
   p label  {float: right; }
+  
+  /*rregullimi ikonave in,twitter etj */
+  body p a
+  {
+      padding: 14px;
+      
+      
+  }
 
 
   nav ul p
   {
       background-color: white;
-	  font-size: 2em;
+	  font-size: 2.6em;
 	  font-style: italic;
 	  background-size: 100px 100px 100px 100px;
   }
+  
+  nav ul p2
+  {
+       background-color: white;
+	  font-size: 2em;
+	  font-style: italic;
+  }
+  
+  
+  
+  
     ul li
   {   float: right;
 	  list-style: none;
@@ -71,6 +90,9 @@ figcaption h4 { float: left;}
   {
 	 text-align: center;
      padding: 10px;
+     font-size: 5em;
+     font-family:serif;
+     
   }
 /* menyte homepage....*/
 li a {color: black;
@@ -120,6 +142,10 @@ font-family: "Times New Roman", Times, serif;
 	  background: gray;
 	  margin-bottom: 100px;
   }
+  
+ 
+  
+  
  figure  img   {
                float: left;
                width: 10%;
@@ -147,6 +173,17 @@ hr #v2 {
     	  margin-bottom: 50px;
     	  background: hotpink;
 }
+
+  hr #v3
+  {
+      position: relative;
+      top:10px;
+      border: none;
+      heigh:0.5px;
+      backgroung: gray;
+      margin-bottom: 100px;
+      
+  }
 /* dizajnimi i tabeles*/
 table {
        width: 100%;
@@ -176,3 +213,8 @@ td a {text-decoration: none;}
 }
 
 p a i {color: black;}
+
+footer p1
+{
+    margin-left: 1000px;
+}
