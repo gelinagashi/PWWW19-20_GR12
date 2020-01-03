@@ -1,10 +1,8 @@
-p,h1,html,body,a,div,figure,img
+
 
    body
    {
-	   background-color: white;
 	   background-image: url(images/g34.jpg);
-	   
 
    }
 
@@ -68,4 +66,11 @@ label input  {
   padding:0 200px;
  
 }
+
+/* ngjyrosja e background-it ne te zeze ne tabelen e fundit dhe footer-it*/
+#n {background-color: black;
+color: white;}
+footer {background-color: black;
+color: white}
+#a1 {color: DarkViolet;}
 
