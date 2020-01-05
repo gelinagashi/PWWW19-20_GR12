@@ -1,10 +1,18 @@
 
-
    body
    {
 	   background-image: url(images/g34.jpg);
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
    }
+
+ul #g
+{font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size: 55px;
+color: #000000;
+font-variant: small-caps;
+text-transform: capitalize;
+}
 
    p
   {
@@ -14,8 +22,9 @@
 
   }
 /* icons orange from black*/
-  p i:hover { color: orange;
-  }
+ p a i {color: gray;}
+ i {color: gray;}
+ i:hover {color: DarkViolet;}
 
 
 
@@ -39,32 +48,32 @@ label input  {
   font-size: 15px;
 }
 .content {
-	
+
   padding: 0 45px;
   display: none;
   overflow: hidden;
-  
+
 }
 .row {
-	
-	
+
+
   max-width: 1200px;
   margin: 30px auto;
-  width: 100%; 
+  width: 100%;
   height:auto;
   display: grid;
   /* Define Auto Row size */
-   
-  grid-auto-rows: auto; 
+
+  grid-auto-rows: auto;
   /*Define our columns */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
   grid-column-gap: 3px;
   grid-row-gap: 0px;
 }
 .infoText{
   padding:0 200px;
- 
+
 }
 
 /* ngjyrosja e background-it ne te zeze ne tabelen e fundit dhe footer-it*/
@@ -74,3 +83,35 @@ footer {background-color: black;
 color: white}
 #a1 {color: DarkViolet;}
 
+/* ngjyrosja e background-it ne te zeze ne tabelen e 2te*/
+#n {background-color: black;
+color: white;}
+footer {background-color: black;
+color: white}
+#a1 {color: DarkViolet;}
+
+/* ndryshimi i teresishem i faqes*/
+#black {background-color: black;
+padding: 2px;
+}
+#brenda { border-radius: 15px;
+background-color: white;
+}
+
+body { margin: auto;
+       background-image: url(Images/g34.jpg);
+
+width: 960px;
+height: 350px;}
+
+#ss {
+   border-radius: 10px;
+  background: DarkViolet;
+  padding: 10px;
+  width: 70px;
+  height: 35px;
+  text-decoration: none;
+  color: white;
+  float: left;
+
+}
