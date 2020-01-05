@@ -41,13 +41,28 @@ window.open('https://www.google.com/#q='+g1 +"site:google.com",  'G1window');
 <li><a href="#">CONSTELLATIONS</a></li>
 <li><a href="#">SOLAR SYSTEM</a></li>
 <li><a href="#">NEWS</a></li>
-<li><a href="#">HOMEPAGE</a></li><hr hr align="right" width="70%">
+<li><a href="#">HOMEPAGE</a></li><hr align="right" width="70%">
 <br>
 </ul>
 </nav>
 </p>
 <section>
-    <h3 id="fotografia">HOROSCOPE SIGNS</h3>
+    <svg height="130" width="500" id="svg">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%"
+                      style="stop-color:Pink;stop-opacity:1" />
+                <stop offset="100%"
+                      style="stop-color:DarkViolet;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <rect x="20" y="20" rx="20" ry="20" width="300" height="150" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="25" font-family="Verdana"
+              x="50" y="86">HOROSCOPE SIGNS</text>
+        Sorry, your browser does not support inline SVG.
+    </svg>
+
+
     <div class="row">
 
         <div class="column "><img class="collapsible" src="Images/aries.jpg" alt="Aries"/>
@@ -286,6 +301,44 @@ for (i = 0; i < coll.length; i++) {
             </a>
         </div>
     </section>
+<br>
+<!-- perdorimi i localStorage-->
+    <div id="result"></div>
+    <script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "HOROSCOPE");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+<br>
+    <!-- perdorimi i SessionStorage-->
+    <script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+    <br>
+    <p><button onclick="clickCounter()" type="button" id="butoni1">Click to count!</button></p>
+    <div id="result"></div>
+
+<br><br>
+
+
+
     <hr>
 
 
